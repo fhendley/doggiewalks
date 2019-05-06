@@ -1,0 +1,318 @@
+/***** TABLET?MOBILE GRID*******/
+/* html{
+    height: 100%;
+} */
+  .content {
+    display: grid;
+    width: 100%;
+    /* height: 250px; */
+    grid-template-areas: "header header"
+                         "header header"
+                         "banner banner"
+                         "title title"
+                         "main main"
+                         "main main"
+                         "main main"
+                         "main main"
+                         "footer footer";
+    grid-template-rows: auto;
+    grid-template-columns: repeat(2, 1fr);
+    /* background-color: blue; */
+  }
+  .banner{
+    grid-area: banner;
+  }
+  .title {
+    grid-area: title;
+  }
+  .main, .main3 {
+    display: grid;
+    grid-area: main;
+    width: 100%;
+    grid-template-areas: "item-1"
+                          "item-2"
+                         "item-3 "
+                         "item-4"
+                         "item-5 "
+                          "item-6"
+                          "item-7"
+                          "item-8";
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+         min-height: 100%;
+  }
+
+
+  .item-1 {
+    grid-area: item-1;
+  }
+  .item-2{
+    grid-area: item-2;
+  }
+  .item-3{
+  grid-area: item-3;
+  }
+  .item-4{
+    grid-area: item-4;
+  }
+  .item-5{
+    grid-area: item-5;
+  }
+  .item-6{
+    grid-area: item-6;
+  }
+  .main2 {
+    display: grid;
+    grid-area: main;
+    width: 100%;
+
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+  }
+  footer {
+    grid-area: footer;
+    display: grid;
+    width: 100%;
+    /* height: 250px; */
+    grid-template-areas: "f-1"
+                          "f-2"
+                         "f-3";
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+  }
+
+  header {
+    grid-area: header;
+    display: grid;
+    width: 100%;
+    /* height: 250px; */
+    grid-template-areas: "logo logo"
+                         "heading heading";
+    grid-template-rows: auto;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .logod{
+    grid-area: logo;
+  }
+
+  .topnav {
+    grid-area: nav;
+  }
+
+  .header {
+    grid-area: heading;
+  }
+
+
+    .s1 {
+      grid-area: s1;
+    }
+    .s2 {
+      grid-area: s2;
+    }
+    .s3 {
+      grid-area: s3;
+    }
+
+    .p1 {
+      grid-area: p1;
+    }
+    .p2 {
+      grid-area: p2;
+    }
+    .p3 {
+      grid-area: p3;
+    }
+    .services-main {
+      display: grid;
+      grid-area: main;
+      width: 100%;
+      grid-template-areas: " image-1 s1"
+                            " p1 p1"
+                            " image-2 s2"
+                            " p2 p2"
+                            " image-3 s3 "
+                            " p3 p3 ";
+      grid-template-rows: auto;
+      grid-template-columns: 1fr 1fr ;
+      min-height: 100%;
+    }
+
+
+
+/****** DESKTOP GRID ******/
+@media screen and (min-width: 900px) {
+
+  .content {
+    display: grid;
+    width: 100%;
+    /* height: 250px; */
+    grid-template-areas: "header header header header"
+                         "header header header header"
+                         "banner banner banner banner"
+                         ".title title ."
+                         ". main main ."
+                         ". main main ."
+                         ". main main ."
+                         ". main main ."
+                         "footer footer footer footer";
+    grid-template-rows: auto ;
+    grid-template-columns: 1fr 3fr 3fr 1fr;
+    /* height: 100%; */
+    /* background-color: blue; */
+    /* min-height: 100%; */
+  }
+  .banner{
+    grid-area: banner;
+  }
+  .title {
+    grid-area: title;
+  }
+
+
+  /*** Gallery grid ***/
+  .main2 {
+    display: grid;
+    grid-area: main;
+    width: 100%;
+    grid-template-areas: "image-1 image-2 image-3"
+                          "image-4 image-5 image-6"
+                          " image-7 image-8 image-9 "
+                          "image-10 image-11 image-12"
+                         "image-13 image-14 image-15"
+                         ". image-16 .";
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+         min-height: 100%;
+  }
+  .image-1{
+    grid-area: image-1;
+  }
+  .image-2{
+    grid-area: image-2;
+  }
+  .image-3{
+    grid-area: image-3;
+  }
+  .image-4{
+    grid-area: image-4;
+  }
+  .image-5{
+    grid-area: image-5;
+  }
+  .image-6{
+    grid-area: image-6;
+  }
+  .image-7{
+    grid-area: image-7;
+  }
+  .image-8{
+    grid-area: image-8;
+  }
+  .image-9{
+    grid-area: image-9;
+  }
+  .image-10{
+    grid-area: image-10;
+  }
+  .image-11{
+    grid-area: image-11;
+  }
+  .image-12{
+    grid-area: image-12;
+  }
+  .image-13{
+    grid-area: image-13;
+  }
+  .image-14{
+    grid-area: image-14;
+  }
+  .image-15{
+    grid-area: image-15;
+  }
+  .image-16{
+    grid-area: image-16;
+  }
+
+  .services-main {
+    display: grid;
+    grid-area: main;
+    width: 100%;
+    grid-template-areas: " image-1 s1 p1"
+                          "image-2 s2 p2"
+                          " image-3 s3 p3 ";
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 2fr 1fr;
+         min-height: 100%;
+  }
+
+  .main3{
+    display: grid;
+    grid-area: main;
+    width: 100%;
+    grid-template-areas: "item-1 item-2"
+                          "item-3 item-4"
+                          "item-5 item-6"
+                          "item-7 item-8"
+                          "item-9 item-9";
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100%;
+
+  }
+  .item-7{
+    grid-area: item-7;
+  }
+  .item-8{
+    grid-area: item-8;
+  }
+  .item-9{
+    grid-area: item-9;
+  }
+  footer {
+    grid-area: footer;
+  }
+  footer {
+    grid-area: footer;
+    display: grid;
+    width: 100%;
+    /* height: 250px; */
+    grid-template-areas: "f-1 f-2"
+                         "f-3 f-3";
+    grid-template-rows: auto;
+    grid-template-columns: repeat(2, 1fr);
+  }
+.f-1 {
+  grid-area: f-1;
+}
+.f-2 {
+  grid-area: f-2;
+}
+.f-3{
+  grid-area: f-3;
+}
+  header {
+    grid-area: header;
+    display: grid;
+    width: 100%;
+    /* height: 250px; */
+    grid-template-areas: "logo nav nav contact-us"
+                        "logo heading heading contact-us";
+    grid-template-rows: auto;
+    grid-template-columns: 2fr 3fr 3fr 2fr ;
+  }
+  .logod{
+    grid-area: logo;
+  }
+  .topnav {
+    grid-area: nav;
+  }
+  .contact-us{
+    grid-area: contact-us;
+  }
+
+  .header {
+    grid-area: heading;
+  }
+
+}
