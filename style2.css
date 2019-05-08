@@ -90,7 +90,7 @@ list-style: none;
   text-align: center;
 }
 /*** Gallery page styling *****/
-.main2 {;
+.main2 {
   overflow: hidden;
   justify-content: center;
 }
@@ -101,7 +101,34 @@ list-style: none;
   object-fit: cover;
   /* overflow: hidden; */
 }
+.gallery-image {
+  position: relative;
+}
+.overlay {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  padding-top: 180px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: var(--blue);
+}
 
+.gallery-image:hover .overlay {
+  opacity: 0.9;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
 /*** Services Page Styling *****/
 .services-main img{
   width: 250px;
